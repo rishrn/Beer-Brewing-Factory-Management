@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buyer Registration</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: sans-serif;
+            margin-top: 40px;
+            background: #0575E6;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #021B79, #0575E6);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #021B79, #0575E6);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+
+        .buyRegi {
+            width: 800px;
+            background-color: rgb(0, 0, 0, 0.6);
+            margin: auto;
+            color: #FFFFFF;
+            padding: 10px 0px 10px 0px;
+            text-align: center;
+            border-radius: 15px 15px 0 0;
+        }
+
+        .cont {
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 800px;
+            margin: auto;
+        }
+
+        form {
+            padding: 10px;
+        }
+
+        .name {
+            margin-left: 25px;
+            margin-top: 30px;
+            width: 125px;
+            color: white;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .f {
+            text-transform: capitalize;
+            margin: 30px;
+        }
+
+        input {
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .btn {
+            background-color: #c1ddfa;
+            padding: 5px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-left: 25px;
+        }
+
+        .btn:hover {
+            cursor: pointer;
+            background-color: #f0f3ff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="buyRegi">
+        <h1>Buyer Registration</h1>
+    </div>
+
+    <div class="cont">
+        <form action="/buyer-register" method="post">
+
+            <div class="f">
+                <label class="name">Buyer Id :-</label>
+                <input type="number" class="buyerid" name="buyerid" required>
+            </div>
+
+            <div id="name" class="f">
+                <label class="name">Name :- </label>
+                <input type="text" class="firstname" name="firstname" placeholder="First Name" required>
+                <input type="text" class="lastname" name="lastname" placeholder="Last Name" required>
+            </div>
+
+            <div class="f">
+                <label class="name">Phone Number :-</label>
+                <input type="number" class="phone" name="phone" required>
+            </div>
+
+            <div class="f">
+                <label class="name">City :-</label>
+                <input type="text" class="city" name="city" required>
+            </div>
+
+            <div class="f">
+                <label class="name">street :-</label>
+                <input type="text" class="street" name="street" required>
+
+            </div>
+            <div class="f">
+                <label class="name">quantity :-</label>
+                <input type="number" class="quantity" name="quantity" required>
+            </div>
+
+            <div class="f">
+                <label class="name">adv_amount :-</label>
+                <input type="number" class="adv_amount" name="adv_amount" required>
+            </div>
+
+            <div class="f">
+                <label class="name">id_proof :-</label>
+                <input type="text" class="id_proof" name="id_proof" required>
+            </div>
+
+            <div class="f">
+                <label class="name">beer_id :-</label>
+                <input type="text" class="beer_id" name="beer_id" required>
+            </div>
+
+            <div class="f">
+                <label class="name">beer_name :-</label>
+                <input type="text" class="beer_name" name="beer_name" required>
+            </div>
+            <div class="f"><input type="submit" value="Submit"></div>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
